@@ -1,0 +1,27 @@
+import com.smslink.api.SmsClient;
+
+public class DirectSender {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        try{
+        	//StringBuffer sendsms = SmsClient.sendsms("zhengyp", "12345678aA!", "Œ“µƒ≤‚ ‘1", "18621817213", "", "");
+        	//StringBuffer getStatusById = SmsClient.getStatusById("zhengyp", "12345678aA!", "6376d806-440d-42bc-b40f-2ac0a7cb7cad",null ,null );
+        	//StringBuffer getStatusByTime = SmsClient.getStatusByTime("zhengyp", "12345678aA!", "18616092168","2013-01-01 08:00:00" ,"2013-01-20 09:00:57", null, null );
+        	//StringBuffer getReplyByTime = SmsClient.getReplyByTime("zhengyp", "12345678aA!", "","","2013-01-01 08:00:00" ,"2013-01-20 09:00:57", null, null );
+        	StringBuffer checkBalance = SmsClient.checkBalance("zhengyp", "12345678aA!");
+        	
+        	System.out.println("resp="+checkBalance.toString());
+        }
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+   		   
+   		
+	}
+	
+}
