@@ -1,0 +1,6 @@
+C:\Users\i037182\Desktop\POSTMAN\PMLibary\PMLibary\bin\Debug\PMLibary.exe.config
+C:\Users\i037182\Desktop\POSTMAN\PMLibary\PMLibary\bin\Debug\PMLibary.exe
+C:\Users\i037182\Desktop\POSTMAN\PMLibary\PMLibary\bin\Debug\PMLibary.pdb
+C:\Users\i037182\Desktop\POSTMAN\PMLibary\PMLibary\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\i037182\Desktop\POSTMAN\PMLibary\PMLibary\obj\x86\Debug\PMLibary.exe
+C:\Users\i037182\Desktop\POSTMAN\PMLibary\PMLibary\obj\x86\Debug\PMLibary.pdb
