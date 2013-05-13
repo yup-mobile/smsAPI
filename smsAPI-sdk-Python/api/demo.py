@@ -12,10 +12,11 @@ endtime = "2013-03-24 21:00:00"
 offset = 0
 mr = 100
 
+
 #result = checkBalance(name,password)
-#result = sendsms(name,password,message,target)
+#result = sendsms(name,password,message,target,sendtime)
 #result = getStatusById(name, password, messageid, offset, mr)
-#result = getStatusByTime(name, password, phoneNo, starttime, endtime, offset, mr)
+result = getStatusByTime(name, password, phoneNo, starttime, endtime, offset, mr)
 #result = getReplyByTime(name, password, phoneNo, starttime, endtime, offset, mr)
 
-#print result
+print result

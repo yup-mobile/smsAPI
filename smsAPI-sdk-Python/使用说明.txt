@@ -1,0 +1,12 @@
+python sdk 目前还处于起步阶段，希望大家一起来完善它
+
+Version 1.1
+
+使用方法：
+
+拷贝依赖包smslink到你的工程下，同时引入到PYTHONPATH中，具体怎么搞，就看你自己的系统啦。
+总之一句话，让执行器可以找到smslink这个依赖包就OK拉。
+
+调用方式，请参考
+smslink/api/demo.py
+

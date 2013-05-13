@@ -1,15 +1,18 @@
-from yc_client import *
+from smsclould_client import *
 import sys, time, os
 import hashlib
 
-loc = ycLocator()
-port = loc.getycHttpSoap11Endpoint(url = "http://114.80.200.100:8081/axis2/services/yc.ycHttpSoap11Endpoint/")
+loc = smsclouldLocator()
+port = loc.getsmsclouldHttpSoap11Endpoint(url = "http://114.80.200.100:8081/axis2/services/smsclould.smsclouldHttpSoap11Endpoint/")
 
-def sendsms(name, password, message, target):
+def sendsms(name, password, message, target,sendtime):
    m = sendsmsRequest()
    m._username = name
    m._password = hashlib.md5(password).hexdigest()
-   rsp = port.sendsms(m, m = message, t = target)
+   m._target = target
+   m._message = message
+   m._sendtime = sendtime
+   rsp = port.sendsms(m)
    return rsp
    
 def getStatusById(name, password, messageid, offset, mr):

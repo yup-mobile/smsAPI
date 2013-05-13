@@ -337,6 +337,7 @@ class _Binding:
 #        print "client.py 336"
         if 'm' in kw and 't' in kw:
             a = soapdata
+            print a
             b = re.sub("http://www.w3.org/2003/05/soap-envelope", "http://schemas.xmlsoap.org/soap/envelope/", a)
             a = re.sub("http://www.w3.org/2001/XMLSchema", "http://yc/xsd", b)
             c = "</ns1:password><ns1:_SendRequset><xsd:ext/><xsd:message>" + kw['m'] + "</xsd:message><xsd:send_time/><xsd:target>" + kw['t'] + "</xsd:target></ns1:_SendRequset></ns1:sendsms>"
@@ -494,7 +495,7 @@ class _Binding:
         if self.address is not None:
             self.address.checkResponse(self.ps, kw.get('wsaction'))
 #        print "ZSI client.py 496"
-        print reply
+#        print reply
         return reply
         
     def __repr__(self):
