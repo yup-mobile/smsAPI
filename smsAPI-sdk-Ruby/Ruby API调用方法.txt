@@ -1,0 +1,2 @@
+client = SmsClient.create
+ client.sendsms('zhengyp', 'aca3955f5c65c2f4be6c2bf8a2c956d2', '13917980980;18621817213', 'gongxifacai', '', '')
